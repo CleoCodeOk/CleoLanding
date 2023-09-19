@@ -1,6 +1,6 @@
 ---
 import Container from "../shared/Container.astro";
-import Paragraph from "../shared/Paragraph.astro";
+// import Paragraph from "../shared/Paragraph.astro";
 import Title from "../shared/Title.astro";
 ---
 
@@ -9,66 +9,67 @@ import Title from "../shared/Title.astro";
     <div class="flex-1 flex midmd:w-7/12 lg:w-1/2 flex-col">
       <Title>We provide Important Features for Digital Marketing</Title>
 
-      <ul class="flex space-y-4 text-heading-3 font-bold">
-        <article>
-          <li class="flex items-center hover:-translate-y-3 transition">
-            <span
-              class="font-bold bg-box-bg rounded-full w-10 h-10 mr-3 text-primary flex justify-center items-center"
-              ><img class="w-6 prueba"  src="/images/html.svg" alt="" /></span
-            > HTML
-          </li>
-          <li class="flex items-center">
-            <span
-              class="font-bold bg-box-bg rounded-full w-10 h-10 mr-3 text-primary flex justify-center items-center"
-              ><img class="w-6" src="/images/css.svg" alt="" /></span
-            > CSS
-          </li>
+      <section class=" tecnologies w-full h-auto  flex text-white font-bold gap-20 mt-8  items-center">
+        <article class="flex flex-col gap-4">
+          <span class="flex gap-2">
+            <div>
+              <img class="w-6" src="/images/html.svg" alt="" />
+            </div>
+            <h4>HTML</h4>
+          </span>
 
-          <li class="flex items-center">
-            <span
-              class="font-bold bg-box-bg rounded-full w-10 h-10 mr-3 text-primary flex justify-center items-center"
-              ><img class="w-6" src="/images/js.svg" alt="" /></span
-            > JAVASCRIPT
-          </li>
+          <span class="flex gap-2">
+            <div>
+              <img class="w-6" src="/images/css.svg" alt="" />
+            </div>
+            <h4>CSS</h4>
+          </span>
 
-          <li class="flex items-center">
-            <span
-              class="font-bold bg-box-bg rounded-full w-10 h-10 mr-3 text-primary flex justify-center items-center"
-              ><img class="w-6" src="/images/tailwind.svg" alt="" /></span
-            > TAILWIND
-          </li>
+          <span class="flex gap-2">
+            <div>
+              <img class="w-6" src="/images/tailwind.svg" alt="" />
+            </div>
+            <h4>TAILWIND</h4>
+          </span>
+
+          <span class="flex gap-2">
+            <div>
+              <img class="w-6" src="/images/js.svg" alt="" />
+            </div>
+            <h4>JAVASCRIPT</h4>
+          </span>
         </article>
 
-        <article>
-          <li class="flex items-center">
-            <span
-              class="font-bold bg-box-bg rounded-full w-10 h-10 mr-3 text-primary flex justify-center items-center"
-              ><img class="w-6" src="/images/react.svg" alt="" /></span
-            > REACT
-          </li>
+        <article class="text-white flex flex-col gap-4">
+          <span class="flex gap-2">
+            <div>
+              <img class="w-6" src="/images/react.svg" alt="" />
+            </div>
+            <h4>REACT</h4>
+          </span>
 
-          <li class="flex items-center">
-            <span
-              class="font-bold bg-box-bg rounded-full w-10 h-10 mr-3 text-primary flex justify-center items-center"
-              ><img class="w-6" src="/images/node.svg" alt="" /></span
-            > NODE.JS
-          </li>
+          <span class="flex gap-2">
+            <div>
+              <img class="w-6" src="/images/node.svg" alt="" />
+            </div>
+            <h4>NODE</h4>
+          </span>
 
-          <li class="flex items-center">
-            <span
-              class="font-bold bg-box-bg rounded-full w-10 h-10 mr-3 text-primary flex justify-center items-center"
-              ><img class="w-6" src="/images/express.svg" alt="" /></span
-            > EXPRESS
-          </li>
+          <span class="flex gap-2">
+            <div>
+              <img class="w-6" src="/images/express.svg" alt="" />
+            </div>
+            <h4>EXPRESS</h4>
+          </span>
 
-          <li class="flex items-center">
-            <span
-              class="font-bold bg-box-bg rounded-full w-10 h-10 mr-3 text-primary flex justify-center items-center"
-              ><img class="w-6" src="/images/express.svg" alt="" /></span
-            > EXPRESS
-          </li>
+          <span class="flex gap-2">
+            <div>
+              <img class="w-6" src="/images/astro.svg" alt="" />
+            </div>
+            <h4>HTML</h4>
+          </span>
         </article>
-      </ul>
+      </section>
     </div>
 
     <div
@@ -98,7 +99,14 @@ import Title from "../shared/Title.astro";
     </div>
   </Container>
 </section>
+<style>
 
-
-
-
+  @media (width < 850px) {
+    
+    .tecnologies{
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+    }
+  }
+</style>

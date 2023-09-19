@@ -15,7 +15,8 @@ module.exports = {
 				"heading-3": "rgb(var(--heading-3))",
 			},
 			screens:{
-				midmd:"880px"
+				midmd:"880px",
+				mobile: '-850px'
 			}
 			
 		},
