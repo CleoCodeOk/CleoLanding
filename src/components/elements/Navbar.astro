@@ -2,7 +2,7 @@
 import BtnLink from "../shared/BtnLink.astro";
 import Container from "../shared/Container.astro";
 import  Navitem from "../shared/Navitem.astro";
-import Logo from '../../../public/logos/Logo.svg'
+import LogoAzul from "../../../public/logos/Azulejo.svg"
 const navItems = [
     {
         href:"#",
@@ -21,6 +21,7 @@ const navItems = [
         text:"Features"
     },
 ]
+
 ---
 
 <header class="absolute inset-x-0 top-0 z-50 py-6">
@@ -30,7 +31,7 @@ const navItems = [
             <div class="min-w-max inline-flex relative">
                 <a href="/" class="relative flex items-center gap-3">
                     <div class="relative w-10 h-10 overflow-hidden flex rounded-xl">
-                        <img src={Logo.src} alt="">
+                        <img src={LogoAzul.src} alt="">
                     </div>
                     <div class="inline-flex text-lg font-semibold text-heading-1">
                         CleoCode
@@ -75,3 +76,4 @@ const navItems = [
         </nav>
     </Container>
 </header>
+
